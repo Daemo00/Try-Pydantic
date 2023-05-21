@@ -1,9 +1,9 @@
 import unittest
 
-from TryPydantic.simple import add_one
+from TryPydantic.main import add_one
 
 
-class TestSimple(unittest.TestCase):
+class TestMain(unittest.TestCase):
 
     def test_add_one(self):
         self.assertEqual(add_one(5), 6)

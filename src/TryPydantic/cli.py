@@ -1,7 +1,7 @@
 """CLI entry points."""
 import argparse
 
-from .simple import add_one
+from .main import add_one
 
 
 def parse_args(args=None):

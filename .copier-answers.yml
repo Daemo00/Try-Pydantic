@@ -1,6 +1,6 @@
 # Changes here will be overwritten by Copier
-_commit: d2d63a1
-_src_path: python-package-template-copier
+_commit: 87c9973
+_src_path: https://github.com/Daemo00/Python-Package-Template-using-Copier
 author_email: daemo00@gmail.com
 author_full_name: Simone Rubino
 cli: true
