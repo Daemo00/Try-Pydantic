@@ -21,6 +21,11 @@ dependencies = [
   "pydantic",
 ]
 
+[project.optional-dependencies]
+docs = [
+	"sphinx",
+	"furo",
+]
 
 
 [project.scripts]
