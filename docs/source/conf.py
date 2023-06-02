@@ -12,6 +12,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'sphinx_immaterial',
 ]
 
 intersphinx_mapping = {
@@ -24,7 +25,33 @@ templates_path = ['_templates']
 
 # -- Options for HTML output
 
-html_theme = 'furo'
+html_theme = 'sphinx_immaterial'
+html_theme_options = {
+    "repo_url": "https://github.com/Daemo00/TryPydantic",
+    "edit_uri": "blob/main/docs/source",
+    "palette": [
+        {
+            "media": "(prefers-color-scheme: dark)",
+            "scheme": "slate",
+            "toggle": {
+                "icon": "material/weather-night",
+                "name": "Switch to light mode",
+            },
+        },
+        {
+            "media": "(prefers-color-scheme: light)",
+            "scheme": "default",
+            "toggle": {
+                "icon": "material/weather-sunny",
+                "name": "Switch to dark mode",
+            },
+        },
+    ],
+}
+
+autodoc_default_options = {
+    "members": True,
+}
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
